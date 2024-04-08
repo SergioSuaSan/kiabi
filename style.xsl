@@ -80,7 +80,7 @@
 						<div class="container">
 							<div class="row mt-2 justify-content-center">
 								<xsl:for-each select="kiabi/categoria">
-									<div class="col-2 m-2">
+									<div class="col-6 col-md-4 col-xl-2 m-2">
 									<a class="nav-link" href="#{@nombre}">
 										<div class="card  border-0">
 											<img class="card-img-top rounded-circle w-75 align-self-center"
