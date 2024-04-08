@@ -102,7 +102,8 @@
 								<h3 class="my-3 fw-semibold"><xsl:value-of select="@nombre"/> <a name="{@nombre}"/></h3>
 								<div class="row justify-content-between">
 									<xsl:for-each select="prenda">
-										<div class="col-4">
+									<xsl:sort select="precio" data-type="number" order="ascending" />
+										<div class="col-4 d-flex">
 											<div class="card my-2">
 													<img class="card-img-top" src="{foto}" alt="Title" />
 												<div class="card-body">
@@ -113,6 +114,8 @@
 											</div>
 											
 										</div>
+									
+										
 									</xsl:for-each>	
 								</div>
 							</xsl:for-each>
